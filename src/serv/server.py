@@ -50,6 +50,16 @@ class S(BaseHTTPRequestHandler):
                     break
             ouate(json.dumps(data,indent=4),"data.json")
 
+
+        elif self.path == '/dell':
+            data = json.loads(red("data.json"))
+            for index, item in enumerate(data):
+                if item['id'] == req['expenses']['id']:
+                    del data[index]
+                    break
+            ouate(json.dumps(data,indent=4),"data.json")
+                    
+
         else:
             data = [{'reply':False}]
 

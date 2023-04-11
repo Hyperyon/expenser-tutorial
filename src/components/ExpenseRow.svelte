@@ -38,6 +38,10 @@ function save() {
 	isInEditMode = false
 }
 
+function deleteExpense(expense) {
+	dispatch("expense-delete",expense)
+}
+
 </script>
 
 
@@ -65,7 +69,7 @@ function save() {
       <td>{exp.subtotal}</td>
       <td>
       	<span class="action" on:click={() => toggleEdit(exp)}>edit</span> 
-      	<span class="action" >delete</span></td>
+      	<span class="action" on:click={() => deleteExpense(exp)}>delete</span></td>
     </tr>
 {:else}
 <tr>

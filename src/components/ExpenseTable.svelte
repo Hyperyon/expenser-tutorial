@@ -20,6 +20,18 @@ function updateExpense(event) {
 
 }
 
+function deleteExpense(event) {
+  console.log('pouet')
+  const deletedExpense = event.detail
+  expenseService.delet(deletedExpense)
+  .then(()=>{
+    store.update(data =>{
+      data = data.filter(expense => expense.id !== deletedExpense.id)
+      return [...data]
+    })
+  })
+}
+
 </script>
 
 <style>
@@ -40,7 +52,7 @@ function updateExpense(event) {
   </thead>
   <tbody>
     {#each expenses as exp}
-    <ExpenseRow {exp} on:expense-update={updateExpense}/>
+    <ExpenseRow {exp} on:expense-update={updateExpense} on:expense-delete={deleteExpense}/>
     {/each}
   </tbody>
 </table>

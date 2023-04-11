@@ -1,29 +1,29 @@
 [
     {
-        "id": 4,
-        "date": "2023-04-11",
-        "paymentType": "cash",
-        "category": "food",
-        "amount": 444,
-        "quantity": 1,
-        "subtotal": 444
-    },
-    {
-        "id": 3,
+        "id": 7,
         "date": "2023-04-11",
         "paymentType": "cash",
         "category": "rent",
-        "amount": "47777",
+        "amount": 0,
         "quantity": 1,
-        "subtotal": 47777
+        "subtotal": 0
     },
     {
-        "id": 2,
-        "date": "2023-04-13",
-        "paymentType": "direct debit",
-        "category": "fai",
-        "amount": "11",
-        "quantity": "55",
-        "subtotal": 605
+        "id": 6,
+        "date": "2023-04-11",
+        "paymentType": "cash",
+        "category": "electricity",
+        "amount": 774,
+        "quantity": 12,
+        "subtotal": 9288
+    },
+    {
+        "id": 5,
+        "date": "2023-04-11",
+        "paymentType": "cash",
+        "category": "rent",
+        "amount": "22",
+        "quantity": 1,
+        "subtotal": 22
     }
 ]
