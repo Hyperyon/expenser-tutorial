@@ -1,0 +1,29 @@
+[
+    {
+        "id": 4,
+        "date": "2023-04-11",
+        "paymentType": "cash",
+        "category": "food",
+        "amount": 444,
+        "quantity": 1,
+        "subtotal": 444
+    },
+    {
+        "id": 3,
+        "date": "2023-04-11",
+        "paymentType": "cash",
+        "category": "rent",
+        "amount": "47777",
+        "quantity": 1,
+        "subtotal": 47777
+    },
+    {
+        "id": 2,
+        "date": "2023-04-13",
+        "paymentType": "direct debit",
+        "category": "fai",
+        "amount": "11",
+        "quantity": "55",
+        "subtotal": 605
+    }
+]
